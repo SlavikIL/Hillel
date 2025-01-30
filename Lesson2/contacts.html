@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Меню -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Головна</a></li>
+            <li><a href="/pages/about.html">Про нас</a></li>
+            <li><a href="/pages/articles.html">Статті</a></li>
+            <li><a href="/pages/gallery.html">Галерея</a></li>
+            <li><a href="/pages/contacts.html">Контакти</a></li>
+            <li><a href="/pages/anchors.html">Якорі</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основний контент -->
+    <main>
+        <h1>Контактна форма</h1>
+        <form action="/submit_form" method="post">
+            <fieldset>
+                <legend>Особиста інформація</legend>
+
+                <label for="fname">Ім'я:</label>
+                <input type="text" id="fname" name="firstname" required>
+
+                <label for="lname">Прізвище:</label>
+                <input type="text" id="lname" name="lastname" required>
+
+                <label for="email">Електронна пошта:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="gender">Стать:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Чоловіча</option>
+                    <option value="female">Жіноча</option>
+                    <option value="other">Інша</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Повідомлення</legend>
+
+                <label for="subject">Тема:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Повідомлення:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Підписка</legend>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="newsletter">
+                    Підписатися на новини
+                </label>
+
+                <label>
+                    <input type="checkbox" name="subscribe" value="updates">
+                    Отримувати оновлення
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Виберіть свої інтереси:</legend>
+                <label>
+                    <input type="radio" name="interests" value="web_design" required>
+                    Веб-дизайн
+                </label>
+                <label>
+                    <input type="radio" name="interests" value="seo">
+                    SEO
+                </label>
+                <label>
+                    <input type="radio" name="interests" value="marketing">
+                    Маркетинг
+                </label>
+            </fieldset>
+
+            <button type="submit">Відправити</button>
+            <button type="reset">Скинути</button>
+        </form>
+    </main>
+
+    <!-- Підвал -->
+    <footer>
+        <p>&copy; 2025 Ваш Сайт</p>
+    </footer>
+</body>
+</html>

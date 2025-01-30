@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Галерея</title>
+    <link rel="stylesheet" href="/styles.css">
+    <style>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery-item {
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+
+        .caption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Меню -->
+    <nav>
+        <ul>
+            <li><a href="/index.html">Головна</a></li>
+            <li><a href="/pages/about.html">Про нас</a></li>
+            <li><a href="/pages/articles.html">Статті</a></li>
+            <li><a href="/pages/gallery.html">Галерея</a></li>
+            <li><a href="/pages/contacts.html">Контакти</a></li>
+            <li><a href="/pages/anchors.html">Якорі</a></li>
+        </ul>
+    </nav>
+
+    <!-- Основний контент -->
+    <main>
+        <h1>Галерея</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="/images/image1.jpg" target="_blank">
+                    <img src="/images/image1.jpg" alt="Опис зображення 1">
+                </a>
+                <div class="caption">Підпис до зображення 1</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/images/image2.jpg" target="_blank">
+                    <img src="/images/image2.jpg" alt="Опис зображення 2">
+                </a>
+                <div class="caption">Підпис до зображення 2</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/images/image3.jpg" target="_blank">
+                    <img src="/images/image3.jpg" alt="Опис зображення 3">
+                </a>
+                <div class="caption">Підпис до зображення 3</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/images/image4.jpg" target="_blank">
+                    <img src="/images/image4.jpg" alt="Опис зображення 4">
+                </a>
+                <div class="caption">Підпис до зображення 4</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/images/image5.jpg" target="_blank">
+                    <img src="/images/image5.jpg" alt="Опис зображення 5">
+                </a>
+                <div class="caption">Підпис до зображення 5</div>
+            </div>
+            <div class="gallery-item">
+                <a href="/images/image6.jpg" target="_blank">
+                    <img src="/images/image6.jpg" alt="Опис зображення 6">
+                </a>
+                <div class="caption">Підпис до зображення 6</div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Підвал -->
+    <footer>
+        <p>&copy; 2025 Ваш Сайт</p>
+    </footer>
+</body>
+</html>
