@@ -1,9 +1,5 @@
-/* /pages/styles.css */
-
-/* Підключення шрифту Roboto з Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Загальні стилі */
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +20,6 @@ header {
     color: #fff;
 }
 
-/* Назва сайту */
 .site-title {
     text-align: center;
     font-size: 28px;
@@ -68,20 +63,22 @@ nav {
     text-decoration: none;
 }
 
-/* Активний пункт меню */
 .menu a.active {
     background-color: #005f6a;
 }
 
 /* Основний контент */
 .content {
-    margin-top: 140px; /* Враховуємо висоту фіксованого хедера */
+    margin-top: 140px;
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Розділи */
 .section {
-    margin-bottom: 50px;
+    width: 100%;
+    max-width: 1200px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -90,35 +87,49 @@ nav {
 
 .section h1 {
     color: #333;
-    font-size: 24px;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-.section p {
-    line-height: 1.6;
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.article {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.article h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.article p {
+    font-size: 16px;
     color: #555;
-    font-size: 16px;
+    line-height: 1.6;
+    flex-grow: 1;
 }
 
-.section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    border-radius: 4px;
+.article .btn {
+    margin-top: 15px;
+    align-self: flex-start;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #008cba;
-    color: #fff;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    font-size: 16px;
-}
-
-.btn:hover {
+.article .btn:hover {
     background-color: #005f6a;
 }
 
@@ -160,33 +171,6 @@ footer {
     color: #555;
 }
 
-/* Статті */
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.article {
-    width: calc(50% - 20px);
-    background-color: #fff;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.article h2 {
-    font-size: 20px;
-    color: #333;
-}
-
-.article p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-}
-
 /* Контакти */
 .contacts p {
     font-size: 16px;
@@ -212,5 +196,9 @@ footer {
 
     .gallery-item, .article {
         width: 100%;
+    }
+
+    .section h1 {
+        font-size: 24px;
     }
 }
