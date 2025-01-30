@@ -1,9 +1,5 @@
-/* /pages/styles.css */
-
-/* Підключення шрифту Roboto з Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Загальні стилі */
 body {
     margin: 0;
     padding: 0;
@@ -24,7 +20,6 @@ header {
     color: #fff;
 }
 
-/* Назва сайту */
 .site-title {
     text-align: center;
     font-size: 28px;
@@ -68,14 +63,13 @@ nav {
     text-decoration: none;
 }
 
-/* Активний пункт меню */
 .menu a.active {
     background-color: #005f6a;
 }
 
 /* Основний контент */
 .content {
-    margin-top: 140px; /* Враховуємо висоту фіксованого хедера */
+    margin-top: 140px;
     padding: 20px;
 }
 
