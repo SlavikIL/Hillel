@@ -1,11 +1,15 @@
+/* /pages/styles.css */
+
+/* Підключення шрифту Roboto з Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Загальні стилі */
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #f4f4f4;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Фіксований хедер */
 header {
@@ -64,12 +68,14 @@ nav {
     text-decoration: none;
 }
 
+/* Активний пункт меню */
 .menu a.active {
     background-color: #005f6a;
 }
 
+/* Основний контент */
 .content {
-    margin-top: 140px;
+    margin-top: 140px; /* Враховуємо висоту фіксованого хедера */
     padding: 20px;
 }
 
@@ -148,6 +154,12 @@ footer {
     border-radius: 4px;
 }
 
+.caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
 /* Статті */
 .articles {
     display: flex;
@@ -173,6 +185,18 @@ footer {
     font-size: 16px;
     color: #555;
     line-height: 1.6;
+}
+
+/* Контакти */
+.contacts p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contacts strong {
+    display: block;
+    margin-bottom: 5px;
 }
 
 /* Адаптивність */
