@@ -1,32 +1,215 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Головна</title>
-    <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8" />
+  <title>IT-news</title>
+  
+  <!-- Підключення шрифту Roboto з Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+    
+    /* Фіксований хедер */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      z-index: 1000;
+      color: #fff;
+    }
+    
+    /* Назва сайту */
+    .site-title {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    
+    /* Навігаційне меню */
+    nav {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .menu {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 15px;
+    }
+    
+    .menu li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu a {
+      display: inline-block;
+      background-color: #008CBA;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #005f6a;
+      text-decoration: none;
+    }
+
+    /* Основний контент */
+    .content {
+      margin-top: 140px; /* Збільшено, щоб врахувати висоту хедера */
+      padding: 20px;
+    }
+    
+    .section {
+      margin-bottom: 50px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .section h1 {
+      color: #333;
+    }
+    
+    .section p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+    .section img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 10px auto;
+      border-radius: 4px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      background-color: #008cba;
+      color: #fff;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #005f6a;
+    }
+    
+    /* Футер */
+    footer {
+      background-color: #333;
+      color: yellow;
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #ccc;
+      position: relative;
+      margin-top: 20px;
+    }
+
+    /* Адаптивність */
+    @media (max-width: 768px) {
+      .menu {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .content {
+        margin-top: 180px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <!-- Меню -->
-    <nav>
-        <ul>
-            <li><a href="/index.html">Головна</a></li>
-            <li><a href="/pages/about.html">Про нас</a></li>
-            <li><a href="/pages/articles.html">Статті</a></li>
-            <li><a href="/pages/gallery.html">Галерея</a></li>
-            <li><a href="/pages/contacts.html">Контакти</a></li>
-            <li><a href="/pages/anchors.html">Якорі</a></li>
-        </ul>
-    </nav>
 
-    <!-- Основний контент -->
-    <main>
-        <h1>Ласкаво просимо на наш сайт!</h1>
-        <p>Це головна сторінка вашого багатосторінкового веб-сайту.</p>
-    </main>
+<header>
+  <div class="site-title">IT-news</div>
+  <nav>
+    <ul class="menu">
+      <li><a href="/index.html">Головна</a></li>
+      <li><a href="/pages/about.html">Про нас</a></li>
+      <li><a href="/pages/articles.html">Статті</a></li>
+      <li><a href="/pages/gallery.html">Галерея</a></li>
+      <li><a href="/pages/contacts.html">Контакти</a></li>
+      <li><a href="/pages/anchors.html">Якорі</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <!-- Підвал -->
-    <footer>
-        <p>&copy; 2025 Ваш Сайт</p>
-    </footer>
+<div class="content">
+  <!-- Розділ 1 -->
+  <div id="section1" class="section">
+    <h1>Історія ІТ в Україні</h1>
+    <p>
+      Зародження інформаційних технологій в Україні розпочалося ще в радянський період, 
+      а саме у 1914 році, коли було висловлено ідею механізації логічних дій, що формалізуються, 
+      та була побудована «Машина логічного мислення». Ця історична подія сталася 
+      у Харківському технологічному інституті. Сьогодні цей багаторічний досвід дозволяє 
+      відслідкувати корені сучасної ІТ-сфери.
+    </p>
+    <img src="images/img-1.jpg" alt="Історія ІТ" />
+    <p>
+      <a class="btn" href="https://uacomputing.com/stories/timeline/" target="_blank">Детальніше</a>
+    </p>
+  </div>
+  <br />
+
+  <!-- Розділ 2 -->
+  <div id="section2" class="section">
+    <h1>Сучасність ІТ в Україні</h1>
+    <p>
+      На сьогодні Україна є одним з провідних постачальників ІТ-аутсорсингових послуг у світі.
+      На території країни успішно працюють як великі міжнародні корпорації, так і перспективні 
+      стартапи, які створюють інноваційні продукти та сервіси.
+    </p>
+    <img src="images/img-2.jpg" alt="Сучасний ІТ-сектор" />
+    <p>
+      <a class="btn" href="https://speka.media/100-naipributkovisix-it-kompanii-ukrayini-98grkp" target="_blank">Детальніше</a>
+    </p>
+  </div>
+  <br />
+
+  <!-- Розділ 3 -->
+  <div id="section3" class="section">
+    <h1>Майбутнє ІТ в Україні</h1>
+    <p>
+      Прогнози щодо розвитку ІТ-сфери в Україні є надзвичайно позитивними: з'являються все 
+      нові стартапи, технологічні кластери та освітні програми. Це створює підґрунтя для 
+      подальшого успіху галузі на міжнародній арені.
+    </p>
+    <img src="images/img-3.jpg" alt="Майбутнє ІТ" />
+    <p>
+      <a class="btn" href="https://zaxid.net/diiacity_union_annual_gathering_2024_innovatsiyi_ta_maybutnye_ukrayinskoyi_it_spilnoti_n1601197" target="_blank">Детальніше</a>
+    </p>
+  </div>
+</div>
+
+<footer>
+  <pre>Ilin Vyachesval 2025</pre>
+</footer>
+
 </body>
 </html>
