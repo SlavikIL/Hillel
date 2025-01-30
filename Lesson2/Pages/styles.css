@@ -133,23 +133,12 @@ nav {
     background-color: #005f6a;
 }
 
-/* Футер */
-footer {
-    background-color: #333;
-    color: yellow;
-    text-align: center;
-    padding: 10px 0;
-    border-top: 1px solid #ccc;
-    position: relative;
-    margin-top: 20px;
-    font-size: 14px;
-}
-
 /* Галерея */
 .gallery {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
 .gallery-item {
@@ -181,6 +170,18 @@ footer {
 .contacts strong {
     display: block;
     margin-bottom: 5px;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
 }
 
 /* Адаптивність */
