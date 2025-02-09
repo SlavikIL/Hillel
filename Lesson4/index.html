@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Завдання з CSS селекторів</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 1. Теговий селектор -->
+  <article>
+    Застосовується до тегу article, вага 1*
+  </article>
+
+  <!-- 2. Селектор класу -->
+  <section class="cls">
+    Застосовується до елемента section з класом .cls, вага 1*
+  </section>
+
+  <!-- 3. Селектор ідентифікатора -->
+  <header id="unique">
+    Застосовується до елемента header з id #unique, вага 1*
+  </header>
+
+  <!-- 4. Селектор атрибуту (використано чистий селектор атрибуту) -->
+  <footer data-type="attr">
+    Застосовується до footer з атрибутом [data-type="attr"], вага 1*
+  </footer>
+
+  <!-- 5. Вкладений (контекстний) селектор -->
+  <div class="descendant">
+    <p>
+      Застосовується до тегу p, вкладеного у div.descendant, селектор <code>.descendant p</code>, вага 2*
+    </p>
+  </div>
+
+  <!-- 6. Дочірній селектор -->
+  <div class="child">
+    <p>
+      Застосовується до тегу p, безпосередньо в div.child, селектор <code>.child > p</code>, вага 2*
+    </p>
+  </div>
+
+  <!-- 7. Селектор сусідніх елементів (adjacent sibling) -->
+  <!-- Для демонстрації необхідно створити два сусідніх елементи. Перший (без тексту) використовується лише для зв’язку селектора. -->
+  <div class="adjacent">
+    <p class="dummy"></p>
+    <p>
+      Застосовується до p, що йде одразу після p.dummy, селектор <code>p.dummy + p</code>, вага 2*
+    </p>
+  </div>
+
+  <!-- 8. Селектор послідовних елементів (general sibling) -->
+  <!-- Аналогічно – перший елемент без опису, другий містить текст -->
+  <div class="general">
+    <p class="dummy-general"></p>
+    <p>
+      Застосовується до p, що є загальним братом для p.dummy-general, селектор <code>p.dummy-general ~ p</code>, вага 2*
+    </p>
+  </div>
+
+  <!-- 9. Комбінований селектор: тег + клас + атрибут -->
+  <h2 class="combo" data-info="combo">
+    Застосовується до h2 з класом .combo та атрибутом [data-info="combo"], селектор <code>h2.combo[data-info="combo"]</code>, вага 3*
+  </h2>
+
+  <!-- 10. Комбінований селектор: ідентифікатор + клас -->
+  <p id="combination" class="combo2">
+    Застосовується до p з id #combination та класом .combo2, селектор <code>#combination.combo2</code>, вага 2*
+  </p>
+</body>
+</html>

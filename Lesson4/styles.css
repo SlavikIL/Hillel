@@ -1,0 +1,58 @@
+/* Фон для всієї сторінки */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* 1. Теговий селектор */
+  article {
+    color: red;
+  }
+  
+  /* 2. Селектор класу */
+  .cls {
+    color: blue;
+  }
+  
+  /* 3. Селектор ідентифікатора */
+  #unique {
+    color: green;
+  }
+  
+  /* 4. Селектор атрибуту (без вказівки тегу, щоб вага була 1*) */
+  [data-type="attr"] {
+    color: orange;
+  }
+  
+  /* 5. Вкладений (контекстний) селектор */
+  .descendant p {
+    color: purple;
+  }
+  
+  /* 6. Дочірній селектор */
+  .child > p {
+    color: teal;
+  }
+  
+  /* 7. Селектор сусідніх елементів (adjacent sibling) */
+  /* Селектор: p.dummy + p */
+  p.dummy + p {
+    color: brown;
+  }
+  
+  /* 8. Селектор послідовних елементів (general sibling) */
+  /* Селектор: p.dummy-general ~ p */
+  p.dummy-general ~ p {
+    color: magenta;
+  }
+  
+  /* 9. Комбінований селектор: тег + клас + атрибут */
+  h2.combo[data-info="combo"] {
+    color: cyan;
+  }
+  
+  /* 10. Комбінований селектор: ідентифікатор + клас */
+  #combination.combo2 {
+    color: lime;
+  }  
