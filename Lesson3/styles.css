@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Фіксований хедер */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    z-index: 1000;
+    color: #fff;
+}
+
+.site-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+/* Навігаційне меню */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    display: inline-block;
+    background-color: #008CBA;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #005f6a;
+    text-decoration: none;
+}
+
+.menu a.active {
+    background-color: #005f6a;
+}
+
+/* Основний контейнер контенту */
+.content {
+    max-width: 1200px;
+    margin: 140px auto 20px;
+    padding: 20px;
+}
+
+/* Розділи */
+.section {
+    margin-bottom: 50px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.section h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.section h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+.section h3 {
+    color: #333;
+    font-size: 20px;
+}
+
+.section p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 16px;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 4px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #008cba;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #005f6a;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: yellow;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    position: relative;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Галерея */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-item {
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.caption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Статті */
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.article {
+    width: calc(100% - 20px);
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.article h2 {
+    font-size: 20px;
+    color: #333;
+}
+
+.article p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Контакти */
+.contacts p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contacts strong {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Стили для контактної форми */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-container > .section {
+    flex: 1 1 45%;
+    box-sizing: border-box;
+}
+
+form fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form .button-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+form button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #008cba;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005f6a;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .content {
+        margin-top: 180px;
+    }
+
+    .gallery-item, .article, .contact-container > .section {
+        width: 100%;
+    }
+}

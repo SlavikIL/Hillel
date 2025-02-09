@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти - IT-news</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<header>
+  <div class="site-title">IT-news</div>
+  <nav>
+    <ul class="menu">
+      <li><a href="../index.html">Головна</a></li>
+      <li><a href="about.html">Про нас</a></li>
+      <li><a href="articles.html">Статті</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="contacts.html" class="active">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="content">
+  <div class="contact-container">
+    <!-- Блок з контактною інформацією -->
+    <div class="section contacts">
+      <h1>Контакти сайту</h1>
+      <p>
+        <strong>Вакансії, реклама, загальна робота сайту:</strong> slavikiljin@gmail.com
+      </p>
+      <p>
+        <strong>Блоги й технічні статті:</strong> slavikiljin@gmail.com
+      </p>
+      <p>
+        <strong>Прес-релізи й новини:</strong> slavikiljin@gmail.com
+      </p>
+    </div>
+    
+    <!-- Блок з формою для запитань -->
+    <div class="section">
+      <h2>Задайте запитання</h2>
+      <form action="send_question.php" method="post">
+        <fieldset>
+          <legend>Контактна форма</legend>
+          
+          <label for="name">Ім'я:</label>
+          <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+          
+          <label for="subject">Тема звернення:</label>
+          <select id="subject" name="subject">
+            <option value="question">Запитання</option>
+            <option value="comment">Коментар</option>
+            <option value="suggestion">Пропозиція</option>
+          </select>
+          
+          <label>Тип звернення:</label>
+          <input type="radio" id="general" name="type" value="general" checked>
+          <label for="general" style="display:inline;">Загальне</label>
+          <input type="radio" id="technical" name="type" value="technical">
+          <label for="technical" style="display:inline;">Технічне</label>
+          
+          <label for="message">Повідомлення:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ваше повідомлення..." required></textarea>
+          
+          <input type="checkbox" id="consent" name="consent" value="yes" required>
+          <label for="consent" style="display:inline;">Я погоджуюсь з умовами обробки персональних даних</label>
+          
+          <div class="button-container">
+            <button type="submit">Надіслати</button>
+            <button type="reset">Скинути</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <pre>Ilin Vyachesval 2025</pre>
+</footer>
+
+</body>
+</html>
